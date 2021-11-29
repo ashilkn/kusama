@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Kusama</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark py-3">
+            <div class="container px-2 flex-nowrap">
+              <div class="div-for-mediaq-toggle">
+              <div class="container">
+                <a class="navbar-brand" href="#">
+                  <img src="images/kusama-logo.svg" alt="" width="120" height="50">
+                </a>
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-6 d-flex flex-row container-fluid">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Parachains</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Auctions</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Guide</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-nowrap" href="#">Claim KSM</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                  <div class="d-flex">
+                  <li class="nav-item px-2">
+                    <a class="nav-link" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a class="nav-link" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                        <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a class="nav-link" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                      </svg>
+                    </a>
+                  </li>
+                </div>
+                </ul>
+                <form class="d-flex nav-button">
+                  <button class="btn btn-outline-primary neon-button text-nowrap navbar-button" style="margin-left: 24px;" type="submit">Start Building</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="container-fluid">
+      <div id="gif-zoom">
+      <div class="gif-main-container container-fluid d-flex justify-content-center align-items-center">
+        <img class="img-fluid" src="images/KUSAMA-GIFS_3.gif" alt="kusama gif">
+        <div class="gif-text">
+          <h1 class="container-fluid d-flex justify-content-center text-nowrap">PARACHAINS ARE HERE</h1>
+          <button class="neon-button">Learn more</button>
+        </div>
+      </div>
+      </div>
+      
+      <div class="container">
+        <section class="intro d-flex flex-column w-100">
+          <div class="heading py-4 col-lg-6 col-md-8 float-start">
+            <h1 class="fw-bold">The Scalable, Multichain Network for Radical Innovation.</h1>
+          </div>
+          <div class="sub-heading d-flex py-4 justify-content-end">
+            <p class="col-lg-6 col-md-8">Unprecedented interoperability and scalability for blockchain developers who want to quickly push the limits of what’s possible. Built using Substrate with nearly the same codebase and industry-leading multichain infrastructure as Kusama’s cousin, Polkadot.
+          </div>
+        </section>
+
+        <div class="img-translate">
+        <section class="d-flex justify-content-center vortex-img">
+          <img src="images/home-vortexs.svg" class="img-fluid" alt="home-vortexs-img">
+        </section>
+        </div>
+
+        <section>
+          <div class="heading">
+            <h3 class="fw-bold">Origin of Kusama</h3>
+          </div>
+          <div class="sub-heading">
+            <p class="col-lg-6 col-md-8">The relationship between society and technology has deteriorated to the point where large entities routinely stretch and overstep their authority.</p>
+            <p class="col-lg-6 col-md-8">Kusama is a network built as a risk-taking, fast-moving ‘canary in the coal mine’ for its cousin Polkadot. It's a living platform built for change agents to take back control, spark innovation and disrupt the status quo.</p>
+          </div>
+        </section>
+
+        <section class="my-5 d-flex justify-content-md-end">
+          <div class="col-md-5 col-md-6 two-borders">
+            <div class="heading px-5 pt-4">
+              <h3>What is Kusama?</h3>
+            </div>
+            <div class="sub-heading px-5 pb-4">
+              <p>Kusama is a scalable network of specialized blockchains built using Substrate and nearly the same codebase as Polkadot. The network is an experimental development environment for teams who want to move fast and   innovate on Kusama, or prepare for deployment on Polkadot.</p>
+              <p>Kusama was founded in 2019 by Gavin Wood, founder of Polkadot and co-founder and former CTO of Ethereum.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="launch-your-blockchain section-margin section-margin-extra">
+          <div class="sticky-div">
+            <img src="images/mesh_graph_1.png" class="img-fluid w-75 center d-block m-auto opacity-50" alt="mesh-graph">
+            <h2 class="fw-bold">Launch your <br> custom blockchain</h2>
+          </div>
+          <article class="scroll-article col-lg-5 col-sm-9 float-lg-end d-block m-auto">
+            <div class="tile">
+              <h4 class="fw-bold">Fast Iteration</h4>
+              <div class="sub-heading">
+                <p>Move fast and ship your product. Kusama’s risk-taking and nimble mentality allows developers to move swiftly through the governance and upgrade process, enabling rapid progress and growth.</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <h4 class="fw-bold">Low Economic Barriers</h4>
+              <div class="sub-heading">
+                <p>Launch your custom blockchain (<span>parachain</span>) project with low barriers to entry. Ideal for lean startups looking to move fast and iterate.</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <h4 class="fw-bold">Advanced Technology</h4>
+              <div class="sub-heading">
+                <p>Build on a next-generation, sharded, multichain network, while employing the newest features before they are deployed on Polkadot.</p>
+              </div>
+            </div>
+            
+            <div class="tile">
+              <h4 class="fw-bold">Open Governance</h4>
+              <div class="sub-heading">
+                <p>Kusama is owned and governed by a community of network participants who vote on and control the evolution of the network. <span>Have a voice</span> and make your mark in the evolution of the network.</p>
+              </div>
+            </div>
+            
+            <div class="tile">
+              <h4 class="fw-bold">Engaged Community</h4>
+              <div class="sub-heading">
+                <p>Leverage Polkadot’s global brand and developer community for your parachain, parathread or dApp.</p>
+              </div>
+            </div>
+            
+            <div class="tile">
+              <h4 class="fw-bold">Valuable Experience</h4>
+              <div class="sub-heading">
+                <p>For teams looking to move to Polkadot after fine-tuning on Kusama, begin building your community and brand on Kusama before deployment.</p>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="ready-to-start">
+          <button class="neon-button fs-6 fw-lighter d-block m-auto">Ready to Start?Contact Our Team</button>
+        </section>
+
+        <section class="launch-your-blockchain section-margin">
+          <div class="sticky-div">
+            <!-- <img src="images/mesh_graph_1.png" class="img-fluid w-75 center d-block m-auto opacity-50" alt="mesh-graph"> -->
+            <div class="w-75 center d-block m-auto void-div" style="width: 873px; height:522px">
+            </div>
+            <h2 class="fw-bold bring-to-your-project">Bring <br> to your project</h2>
+          </div>
+          <article class="scroll-article col-lg-5 col-sm-9 float-lg-end d-block m-auto">
+            <div class="tile">
+              <h4 class="fw-bold">Innovation</h4>
+              <div class="sub-heading">
+                <p>Kusama is built by the same teams as Polkadot, using nearly the same code and tools. The network places the latest tech from Parity Technologies and Web3 Foundation in the hands of developers, even before those features make it to Polkadot.</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <h4 class="fw-bold">Scalability</h4>
+              <div class="sub-heading">
+                <p>Kusama’s sharded blockchains and open governance provide a scalable and future-proof infrastructure for businesses, marketplaces and applications to deploy and mature.</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <h4 class="fw-bold">Interoperability</h4>
+              <div class="sub-heading">
+                <p>Kusama brings multiple blockchains together into one sharded network, freeing developers from the siloes created by legacy blockchain networks.</p>
+              </div>
+            </div>
+            
+            <div class="tile">
+              <h4 class="fw-bold">Customization</h4>
+              <div class="sub-heading">
+                <p>With <span>Substrate</span>, developers can build their own app-specific blockchain and connect it to Kusama.</p>
+              </div>
+            </div>
+          </article>
+        </section>  
+        
+        <section class="develop-on-canary section-margin">
+          <div class="canary">
+            <img src="images/mesh_graph_2.png" class="img-fluid center d-block m-auto opacity-50" alt="mesh-graph-2">
+            <h2 class="fw-bold">Develop on the <br> Canary Network</h2>
+            <article class="scroll-article col-lg-5 col-sm-9 float-lg-end d-block m-auto my-5 sub-heading">
+              <p>Many teams will choose Kusama for their dapp or parachain and remain exclusively on Kusama. Other teams will join Kusama as a temporary preparation ground for deployment on Polkadot.</p>
+            </article>
+          </div>
+        </section>
+        
+        <section class="container-fluid">
+          <div class="row head-list">
+            <h3 class="col-lg-6 col-md-8 col-sm-10 ms-sm-5">Parachains and Applications</h3>
+            <ul class="col-sm-6 col-md-4 d-block mx-auto py-5">
+              <li class="text-nowrap">Gaming and eSports</li>
+              <li class="text-nowrap">Messaging</li>
+              <li class="text-nowrap">DAO</li>
+              <li class="text-nowrap">Marketplaces</li>
+              <li class="text-nowrap">Oracles</li>
+              <li class="text-nowrap">Music</li>
+              <li class="text-nowrap">Social Networking</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="ready-to-start">
+          <button class="neon-button fs-6 fw-lighter d-block m-auto">Why Build a Parachain</button>
+        </section>
+
+        <section class="container-fluid section-margin">
+          <div class="row head-list">
+            <h3 class="col-lg-6 col-md-8 col-sm-10 ms-sm-5">KSM Token Utilization</h3>
+            <ul class="col-sm-6 col-md-4 d-block mx-auto py-5">
+              <li class="text-nowrap">Validate the network</li>
+              <li class="text-nowrap">Nominate validators</li>
+              <li class="text-nowrap">Bond parachains or <br> parathreads</li>
+              <li class="text-nowrap">Vote on governance <br> referenda</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="container-fluid section-margin">
+          <div class="row head-list">
+            <h3 class="col-lg-4 col-md-6 col-sm-8 ms-sm-5">Build with Substrate</h3>
+            <ul class="col-lg-6 col-md-8 col-sm-10 d-block mx-auto py-5">
+              <li><img class="img-fluid" src="images/substrate-playground.png" alt="substrate-playground-img"></li>
+              <li class="bws-text">Your Substrate Blockchain is natively compatible with Kusama, making it simple to secure your blockchain and communicate with Kusama's network.</li>
+              <li class="d-sm-flex two-buttons">
+                <button class="neon-button m-2 white-btn">Learn More</button>
+                <button class="neon-button m-2">Subsrate Playground</button>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="container-fluid three-boxes">
+          <div class="row justify-content-center gap-5">
+            <div class="col-md-3 col-sm-6 two-borders d-flex flex-column p-0">
+              <h3>Build</h3>
+              <a href="#" class="arrow-icon">Kusama Docs &nbsp -></a>
+              <a href="#" class="arrow-icon">Learn <br> Substrate &nbsp -></a>
+            </div>
+            <div class="col-md-3 col-sm-6 two-borders d-flex flex-column p-0">
+              <h3>Validate</h3>
+              <a href="#" class="arrow-icon">Start<br> Validating &nbsp -></a>
+              <a href="#" class="arrow-icon">Technical<br> Updates &nbsp -></a>
+            </div>
+            <div class="col-md-3 col-sm-6 two-borders d-flex flex-column p-0">
+              <h3>Join</h3>
+              <a href="#" class="arrow-icon">Ambassador <br>Program &nbsp -></a>
+              <a href="#" class="arrow-icon">Nominate a<br> validator &nbsp -></a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="pre-footer">
+        <div class="container col-lg-3 col-md-5 col-sm-6">
+          <div class="row text-center justify-content-center">
+            <h3>Stay in the loop</h3>
+            <p>Subscribe to the newsletter to hear about Kusama updates and events.</p>
+            <button class="neon-button">Subscribe</button>
+            <small>To see how we use your information please see our <span>privacy policy.</span></small>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container">
+      <div class="footer-top row">
+        <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center">
+          <h5 class="text-light fw-bold w-100">Developers</h5>
+          <ul class="w-100">
+            <li><a href="#">Guide</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Techical Riot Chat</a></li>
+            <li><a href="#">Web3 Foundation Grants</a></li>
+            <li><a href="#">Governance Chat</a></li>
+            <li><a href="#">Validator Chat</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center">
+          <h5 class="text-light fw-bold w-100">Community</h5>
+          <ul class="w-100">
+            <li><a href="#">Community Hub</a></li>
+            <li><a href="#">Ambassador Program</a></li>
+            <li><a href="#">Meetup Hub</a></li>
+            <li><a href="#">Find a Local Meetup</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Brand Assets</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center">
+          <h5 class="text-light fw-bold w-100">Social</h5>
+          <ul class="w-100">
+            <li><a href="#">Discord</a></li>
+            <li><a href="#">Watercooler Riot Chat</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Reddit</a></li>
+            <li><a href="#">Youtube</a></li>
+            <li><a href="#">Crowdcast Webinars</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center">
+          <h5 class="text-light fw-bold w-100">Info</h5>
+          <ul class="w-100">
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Polkadot</a></li>
+            <li><a href="#">Substrate</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Web3 Foundation</a></li>
+            <li><a href="#">Parity Technologies</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom row container my-sm-5 my-md-2">
+        <div>
+        <div class="d-flex justify-content-center align-items-center">
+          <small class="text-light text-nowrap">© 2021 Kusama</small>
+          <ul class="d-flex align-items-center">
+            <li><a href="#" class="text-nowrap">Privacy Policy</a></li>
+            <li><a href="#" class="text-nowrap">Terms and Conditions</a></li>
+            <li><a href="#" class="text-nowrap">Cookie Settings</a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+   
+  </body>
+</html>
